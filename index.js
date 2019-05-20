@@ -55,9 +55,9 @@ export default class HTMLText extends PureComponent {
     this._mounted = false;
   }
 
-  _onLayout = layout => {
+  _onLayout(layout) {
     this.setState({ width: layout.nativeEvent.layout.width });
-  };
+  }
 
   _htmlToComponent(done) {
     const handler = new htmlparser.DomHandler((error, dom) => {
