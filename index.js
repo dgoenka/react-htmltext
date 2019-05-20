@@ -26,21 +26,6 @@ const liStyle = { ...baseFontStyle };
 
 export default class HTMLText extends PureComponent {
 
-  static defaultProps = {
-    styles: StyleSheet.create({
-      p: paragraphStyle,
-      center: centerStyle,
-      b: boldStyle,
-      strong: boldStyle,
-      i: italicStyle,
-      em: italicStyle,
-      pre: codeStyle,
-      code: codeStyle,
-      a: hrefStyle,
-      li: liStyle,
-    }),
-  };
-
   constructor() {
     super();
 
