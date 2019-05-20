@@ -25,9 +25,9 @@ const hrefStyle = { ...baseFontStyle, fontWeight: '500', color: '#007AFF' };
 const liStyle = { ...baseFontStyle };
 
 export default class HTMLText extends PureComponent {
-  _mounted: boolean;
+  _mounted;
 
-  _rendering: boolean;
+  _rendering;
 
   static defaultProps = {
     styles: StyleSheet.create({
